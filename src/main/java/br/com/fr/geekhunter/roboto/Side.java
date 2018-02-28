@@ -1,5 +1,5 @@
 package br.com.fr.geekhunter.roboto;
 
-public enum Lado {
-	Esquerda, Direita;
+public enum Side {
+	Left, Right;
 }

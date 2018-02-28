@@ -1,5 +1,5 @@
 package br.com.fr.geekhunter.roboto;
 
-public enum Orientacao {
+public enum Orientation {
 	North, South, East, West;
 }
