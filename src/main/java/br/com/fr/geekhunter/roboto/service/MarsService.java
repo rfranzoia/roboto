@@ -30,14 +30,14 @@ public class MarsService {
 					robo.rotaciona(Lado.Direita);
 					break;
 				default:
-					throw new MovimentacaoInvalidaException();
+					throw new MovimentacaoInvalidaException("Movimentação Inválida");
 			}
 			
 			if (robo.getX() < 0 || robo.getY() < 0) {
-				throw new PosicaoInvalidaException();
+				throw new PosicaoInvalidaException("Posição Inválida");
 				
 			} else if (robo.getY() > (terreno.getAltura() - 1) || robo.getX() > (terreno.getLargura() - 1)) {
-				throw new PosicaoInvalidaException();
+				throw new PosicaoInvalidaException("Posição Inválida");
 				
 			}
 		}
